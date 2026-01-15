@@ -3,7 +3,6 @@
 let
   pythonPackages = with pkgs.python3Packages; [
     jupyterlab
-    notebook
     ipykernel
     pip
     numpy
@@ -20,7 +19,7 @@ pkgs.mkShell {
 
   shellHook = ''
     echo "wellcum 0w0"
-    echo "Run 'jupyter notebook' or 'jupyter lab' to get started 💻"
+    echo "Run 'jupyter lab' to get started 💻"
   '';
 }
 
